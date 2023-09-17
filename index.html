@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather Dashboard</title>
+  <link href="https://unpkg.com/tailwindcss@^2.2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex justify-center items-center h-screen">
+  <div class="text-center p-4">
+    <h1 class="text-4xl font-bold">Weather Dashboard</h1>
+    <h3 class="text-lg mt-2">Enter a city name to find current weather and 5 day forecast...</h3>
+    <form id="zip-code" class="mt-4">
+      <input id="search-input" class="px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+        placeholder="City Name" type="text">
+      <button id="search-button"
+        class="px-4 py-2 ml-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+        type="button">Get the weather!</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
