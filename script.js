@@ -15,7 +15,7 @@ function getWeather(event){
     const weatherAPIKey = "635a9e9b5509af0d2dd19994efa78b66";
     var city = document.getElementById("search-input").value;
 
-    fetch("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + weatherAPIKey + "&units=imperial")
+    fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + weatherAPIKey + "&units=imperial")
         .then(function (response) {
             return response.json();
         })
@@ -31,7 +31,7 @@ function getForecast(latitude,longitude){
     forecast.setAttribute("style", "text-align: center")
     forecast.textContent = "5 Day Weather Forecast"
 
-    fetch("http://api.openweathermap.org/data/2.5/forecast?lat=" + latitude + "&lon=" + longitude + "&appid=" + weatherAPIKey + "&units=imperial") 
+    fetch("https://api.openweathermap.org/data/2.5/forecast?lat=" + latitude + "&lon=" + longitude + "&appid=" + weatherAPIKey + "&units=imperial") 
         .then(function (response) {
             return response.json();
         })
@@ -165,7 +165,7 @@ function getWeatherFromHistory(cityButton){
 
     const weatherAPIKey = "635a9e9b5509af0d2dd19994efa78b66";
 
-    fetch("http://api.openweathermap.org/data/2.5/weather?q=" + cityButton + "&appid=" + weatherAPIKey + "&units=imperial")
+    fetch("https://api.openweathermap.org/data/2.5/weather?q=" + cityButton + "&appid=" + weatherAPIKey + "&units=imperial")
         .then(function (response) {
             return response.json();
         })
