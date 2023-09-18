@@ -12,7 +12,7 @@ let day5 = now.add(5, 'day').format("MM/DD/YYYY")
 function getWeather(event){
     event.preventDefault();
 
-    const weatherAPIKey = "635a9e9b5509af0d2dd19994efa78b66";
+    const weatherAPIKey = config.WEATHAPI;
     var city = document.getElementById("search-input").value;
 
     fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + weatherAPIKey + "&units=imperial")
@@ -26,7 +26,7 @@ function getWeather(event){
 };
 
 function getForecast(latitude,longitude){
-    const weatherAPIKey = "635a9e9b5509af0d2dd19994efa78b66";
+    const weatherAPIKey = config.WEATHAPI;
     const forecast = document.querySelector("#forecast")
     forecast.setAttribute("style", "text-align: center")
     forecast.textContent = "5 Day Weather Forecast"
