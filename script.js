@@ -170,7 +170,7 @@ function getWeatherFromHistory(cityButton){
             return response.json();
         })
         .then(function (data) {
-            currentWeather(data.name, data.main.temp, data.wind.speed, data.main.humidity);
+            currentWeather(data.name, data.weather[0].icon, data.main.temp, data.wind.speed, data.main.humidity);
             getForecast(data.coord.lat, data.coord.lon);
     })
 };
