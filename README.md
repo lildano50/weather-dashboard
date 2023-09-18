@@ -19,8 +19,7 @@ A simple, styled web page that has displays weather conditions for a city for cu
 
 
 ## Link to weather dashboard
-
-
+https://lildano50.github.io/weather-dashboard/
 
 ## Screenshot of Working Application
 ![wd2](https://github.com/lildano50/weather-dashboard/assets/119541939/97271979-df95-4806-a128-c08396f800f0)
