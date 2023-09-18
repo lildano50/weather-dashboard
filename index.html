@@ -7,7 +7,7 @@
   <link href="https://unpkg.com/tailwindcss@^2.2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-100 flex justify-center items-center h-screen">
+<body class="bg-gray-100 justify-center items-center h-screen">
   <div class="text-center p-4">
     <h1 class="text-4xl font-bold">Weather Dashboard</h1>
     <h3 class="text-lg mt-2">Enter a city name to find current weather and 5 day forecast...</h3>
@@ -19,44 +19,62 @@
         type="button">Get the weather!</button>
     </form>
   </div>
-  <div>
-    <h1 class="text-4xl front-bold" id ="current-weather"></h1>
-    <h3 id="current-temp"></h3>
-    <h3 id="current-wind"></h3>
-    <h3 id="current-humid"></h3>
-  </div>
-  <div>
-    <h1 id="future-weather-d1"></h1>
-        <ul>
-            <li id="temp1"></li>
-            <li id="wind1"></li>
-            <li id="humid1"></li>
-        </ul>
-    <h1 id="future-weather-d2"></h1>
-        <ul>
-            <li id="temp2"></li>
-            <li id="wind2"></li>
-            <li id="humid2"></li>
-        </ul>
-    <h1 id="future-weather-d3"></h1>
-        <ul>
-            <li id="temp3"></li>
-            <li id="wind3"></li>
-            <li id="humid3"></li>
-        </ul>
-    <h1 id="future-weather-d4"></h1>
-        <ul>
-            <li id="temp4"></li>
-            <li id="wind4"></li>
-            <li id="humid4"></li>
-        </ul>    
-    <h1 id="future-weather-d5"></h1>
-        <ul>
-            <li id="temp5"></li>
-            <li id="wind5"></li>
-            <li id="humid5"></li>
-        </ul>
-  </div>
+
+  <div id="search-history"></div>
+
+  <div class="p-5 justify-center items-center">
+    <h2 class="text-2xl front-bold" id ="current-weather"></h2>
+    <ul>
+        <li id="current-temp"></li>
+        <li id="current-wind"></li>
+        <li id="current-humid"></li>
+    </ul>
+    </div>
+
+    <h1 class=" text-3xl" id="forecast"></h1>
+
+    <div class="flex flex-row">
+        <section class = "container mx-auto p-5 bg-blue-950">
+            <h2 class="text-2xl front-bold" id="future-weather-d1"></h2>
+                <ul>
+                    <li id="temp1"></li>
+                    <li id="wind1"></li>
+                    <li id="humid1"></li>
+                </ul>
+        </section>
+        <section class="container mx-auto p-5">
+            <h2 class="text-2xl front-bold" id="future-weather-d2"></h2>
+                <ul>
+                    <li id="temp2"></li>
+                    <li id="wind2"></li>
+                    <li id="humid2"></li>
+                </ul>
+        </section>
+        <section class="container mx-auto p-5">
+            <h2 class="text-2xl front-bold" id="future-weather-d3"></h2>
+                <ul>
+                    <li id="temp3"></li>
+                    <li id="wind3"></li>
+                    <li id="humid3"></li>
+                </ul>
+        </section>
+        <section class="container mx-auto p-5">
+            <h2 class="text-2xl front-bold" id="future-weather-d4"></h2>
+                <ul>
+                    <li id="temp4"></li>
+                    <li id="wind4"></li>
+                    <li id="humid4"></li>
+                </ul>    
+        </section>
+        <section class="container mx-auto p-5">
+            <h2 class="text-2xl front-bold" id="future-weather-d5"></h2>
+                <ul>
+                    <li id="temp5"></li>
+                    <li id="wind5"></li>
+                    <li id="humid5"></li>
+                </ul>
+        </section>
+    </div>
 
 
   <script src="script.js"></script>
