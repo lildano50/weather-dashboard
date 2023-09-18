@@ -25,6 +25,7 @@
   <div class="p-5 justify-center items-center">
     <h2 class="text-2xl front-bold" id ="current-weather"></h2>
     <ul>
+        <li id= "pic"></li>
         <li id="current-temp"></li>
         <li id="current-wind"></li>
         <li id="current-humid"></li>
@@ -34,17 +35,21 @@
     <h1 class=" text-3xl" id="forecast"></h1>
 
     <div class="flex flex-row">
-        <section class = "container mx-auto p-5 bg-blue-950">
+        <div class = "container mx-auto p-5">
             <h2 class="text-2xl front-bold" id="future-weather-d1"></h2>
                 <ul>
+                    <li id="day1"></li>
+                    <li id="weather1"></li>
                     <li id="temp1"></li>
                     <li id="wind1"></li>
                     <li id="humid1"></li>
                 </ul>
-        </section>
+        </div>
         <section class="container mx-auto p-5">
             <h2 class="text-2xl front-bold" id="future-weather-d2"></h2>
                 <ul>
+                    <li id="day2"></li>
+                    <li id="weather2"></li>
                     <li id="temp2"></li>
                     <li id="wind2"></li>
                     <li id="humid2"></li>
@@ -53,6 +58,8 @@
         <section class="container mx-auto p-5">
             <h2 class="text-2xl front-bold" id="future-weather-d3"></h2>
                 <ul>
+                    <li id="day3"></li>
+                    <li id="weather3"></li>
                     <li id="temp3"></li>
                     <li id="wind3"></li>
                     <li id="humid3"></li>
@@ -61,6 +68,8 @@
         <section class="container mx-auto p-5">
             <h2 class="text-2xl front-bold" id="future-weather-d4"></h2>
                 <ul>
+                    <li id="day4"></li>
+                    <li id="weather4"></li>
                     <li id="temp4"></li>
                     <li id="wind4"></li>
                     <li id="humid4"></li>
@@ -69,6 +78,8 @@
         <section class="container mx-auto p-5">
             <h2 class="text-2xl front-bold" id="future-weather-d5"></h2>
                 <ul>
+                    <li id="day5"></li>
+                    <li id="weather5"></li>
                     <li id="temp5"></li>
                     <li id="wind5"></li>
                     <li id="humid5"></li>
@@ -76,8 +87,10 @@
         </section>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js" integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 
-  <script src="script.js"></script>
 </body>
 
 </html>
